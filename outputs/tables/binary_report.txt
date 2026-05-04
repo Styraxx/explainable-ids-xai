@@ -1,0 +1,61 @@
+Binary Intrusion Detection (CIC-IDS2017)
+=================================================
+
+Dataset Summary
+------------------------------
+Full dataset shape: (2827876, 80)
+Train shape: (1979513, 78)
+Test shape: (848363, 78)
+Train subset used for fitting: (120000, 78)
+Attack prevalence (full): 0.196811
+Attack prevalence (train): 0.196811
+Attack prevalence (test): 0.196811
+
+Test Classification Report
+------------------------------
+              precision    recall  f1-score   support
+
+           0     0.9982    0.9991    0.9987    681396
+           1     0.9965    0.9927    0.9946    166967
+
+    accuracy                         0.9979    848363
+   macro avg     0.9974    0.9959    0.9966    848363
+weighted avg     0.9979    0.9979    0.9979    848363
+
+Test Set Metrics
+------------------------------
+Accuracy: 0.997875
+Precision: 0.996507
+Recall: 0.992681
+F1-score: 0.994590
+ROC-AUC: 0.999854
+PR-AUC (Average Precision): 0.999442
+
+Confusion Matrix [ [TN, FP], [FN, TP] ]
+------------------------------
+[[680815    581]
+ [  1222 165745]]
+
+Train vs Test Generalisation Check
+------------------------------
+Train Accuracy: 0.998283
+Test Accuracy: 0.997875
+Train ROC-AUC: 0.999976
+Test ROC-AUC: 0.999854
+Absolute Accuracy Gap: 0.000409
+Absolute ROC-AUC Gap: 0.000122
+Train and test performance are very close, suggesting limited evidence of overfitting under this split.
+
+3-Fold Cross-Validation on Training Subset
+------------------------------
+Accuracy scores: [0.997575 0.997375 0.99795 ]
+Mean Accuracy: 0.997633
+Std Accuracy: 0.000238
+ROC-AUC scores: [0.999815 0.999764 0.999865]
+Mean ROC-AUC: 0.999815
+Std ROC-AUC: 0.000041
+
+Repeated Evaluation (15 runs on subset)
+------------------------------
+Mean ROC-AUC: 0.999670
+Std ROC-AUC: 0.000134
