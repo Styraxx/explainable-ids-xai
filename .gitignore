@@ -9,3 +9,8 @@ outputs/models/
 *.joblib
 *.zip
 *.log
+
+outputs/figures/lime_cases/
+outputs/tables/error_cases.csv
+outputs/tables/shap_top10_by_category.csv
+outputs/tables/shap_top10_overlap.csv
